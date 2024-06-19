@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color:rgb(40, 39, 39);
+    color: #fff;
+
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-image:url('background.png');
+    background-size: cover;
+
+    background-position:center;
+    
+}
+#name{
+    color:#fff;
+    font-size:50px;
+    
+
+}
+.container{
+    padding:10px 10%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width:140px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a{
+    color: #E50914;
+    text-decoration:none;
+    font-weight:bolder;
+
+    font-size: 20px;
+    position:relative;
+    
+
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#fff;
+    position:absolute;
+
+    left:0;
+    bottom: -6px;
+    transition:0.5s;
+
+}
+nav ul li a:hover::after{
+    width:100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size:30px;
+}
+.header-text h1{
+    font-size:60px;
+    margin-top:20px;
+}
+.header-text h1 span{
+    color:#E50914;
+}
+#name span{
+    color:#E50914;
+}
+/* about*/
+#about{
+    padding:80px 0;
+    color: #ababab;
+    width:100%;
+    height:100vh;
+    background-image: url(background);
+    background-position: center;
+    background-size:cover;
+    
+}
+.heading span{
+    color:#E50914;
+}
+.heading{
+    color:#fff;
+    text-align: center;
+    font-size: 80px;
+    
+    
+}
+.para{
+    padding-right: 500px;
+    
+    text-decoration: solid;
+    font-weight: bolder;
+    text
+} 
+/* Skills*/
+#Skills{
+    padding:80px 40px;
+    color: #ababab;
+    width:100%;
+    height:100vh;
+    background-image: url(background);
+    background-position: center;
+    background-size:cover;
+    
+}
+#skill-list{
+    list-style-type: circle;
+    
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+#skill-list h1{
+    color:#fff;
+    text-align: center;
+}
+#skill-list h1 span{
+    color:#E50914;
+
+}
+#skill-list li span{
+    font-size:20px;
+    position: relative;
+    
+}
+/*education*/
+#Education{
+    padding:80px 40px;
+    color: #ababab;
+    width:100%;
+    height:100vh;
+    background-image: url(Edu.png);
+    background-position:cover;
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+    
+    
+    
+}
+
+
+#ed-list{
+    font-size:18px;
+    list-style-type:none;
+    padding-left: 0%;
+}
+#contact{
+    padding:80px 40px;
+    color: #ababab;
+
+   
+    
+}
+#contact h1{
+    color: #fff;
+    
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-left{
+    flex-basis:35%;
+}
+.contact-right{
+    flex-basis:60%;
+}
+.contact-left p {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 20px;
+
+
+}
+.contact-left p i{
+    color:#E50914;
+}
+.social-icons a {
+    margin-right: 15px;
+    color:#fff; /* Change the color as needed */
+    font-size: 24px;
+    text-decoration: none;
+    transition:transform 0.5s;
+}
+.social-icons a:hover{
+    color: #E50914;
+    transform: translateY(-5px);
+
+
+}
+.btn.btn2{
+    display:inline-block;
+    background-color:#E50914;
+    color:#fff;
+    padding:8px;
+    text-decoration: none;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background: #3d3d3d;
+    padding:15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius:6px;
+
+}
+form btn2{
+    padding:14px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding:25px;
+    margin:0;
+    font-weight: 300;
+    background: #3d3d3d;
+    margin-top:20px;
+
+}
+.copyright i{
+    color:#ababab;
+}
+/*-----------css for small screen-----*/
+@media only screen and (max-width: 768px) {
+    .header-text {
+        margin-top: 40%;
+        font-size: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .para {
+        padding-right: 0;
+    }
+
+    #skill-list {
+        font-size: 30px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    
+    .contact-left p {
+        margin: 0 0 15px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
